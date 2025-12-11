@@ -11,18 +11,18 @@ c2 = 0
 for i in s2:
     c2 += 1
 
-limit = c1
+lim = c1
 if c2 < c1:
-    limit = c2
+    lim = c2
 
-for k in range(limit):
+for k in range(lim):
     result = result + s1[k]
     result = result + s2[c2 - 1 - k]
 
-for k in range(limit, c1):
+for k in range(lim, c1):
     result = result + s1[k]
 
-for k in range(c2 - limit - 1, -1, -1):
+for k in range(c2 - lim - 1, -1, -1):
     result = result + s2[k]
 
 print(result)
